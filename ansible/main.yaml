@@ -1,5 +1,0 @@
-- name: Deploy Django
-  import_playbook: ./playbooks/deploy_django.yaml
-
-# - name: Run HTML Webapp Playbook
-#   import_playbook: ./playbooks/nginx/remove.yaml
