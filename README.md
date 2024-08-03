@@ -9,7 +9,6 @@
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
   - [Usage](#usage)
-  - [Project Structure](#project-structure)
 
 ## Introduction
 This project simulates a Raspberry Pi temperature sensor using Django for the backend and TimescaleDB for time-series data storage. The project is containerized using Docker Compose for easy setup and deployment.
@@ -65,37 +64,3 @@ Ensure you have the following installed on your system:
 - Access the Django admin at `http://localhost:8000/admin` and log in with the superuser credentials.
 - The REST API is accessible at `http://localhost:8000/api/`.
 
-## Project Structure
-├── Dockerfile
-├── README.md
-├── compose.yaml
-├── project_structure.txt
-├── requirements.txt
-└── src
-    ├── helpers
-    │   ├── __init__.py
-    │   └── env.py
-    ├── iothome
-    │   ├── __init__.py
-    │   ├── api.py
-    │   ├── asgi.py
-    │   ├── celery.py
-    │   ├── settings.py
-    │   ├── urls.py
-    │   ├── views.py
-    │   └── wsgi.py
-    ├── manage.py
-    ├── sensors
-    │   ├── __init__.py
-    │   ├── admin.py
-    │   ├── apps.py
-    │   ├── collect.py
-    │   ├── models.py
-    │   ├── services.py
-    │   ├── tasks.py
-    │   ├── tests.py
-    │   └── views.py
-    ├── staticfiles
-    └── templates
-        ├── home.html
-        └── nodes.html
